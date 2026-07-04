@@ -62,9 +62,28 @@ function ToDoList(){
             <ol>
                 {/* prueba de ver como se renderiza en consola los elementos del array actual */}
                 {/* cada tarea recibe un elemento a renderizar */}
+                {/*  
                 {tasks.map((elemento) => {
                     console.log(elemento)
                 })}
+                    */}
+                    {/* react añade una key para cada elemento */}
+                    {/* cada elemento recibe un índice y el tipo de elemento "li" */}
+                    {/*  
+                {
+                    tasks.map((tarea,indice) => {
+                        console.log(<li key={indice}></li>)
+                    })
+                        
+                }
+                    */}
+
+                    {tasks.map((tarea,indice) => {
+                        // creamos la tarea y le asignamos el indice a cada li
+                        <li key="indice">
+                            <span className="text">{task}</span>
+                        </li>
+                    })}
             </ol>
         </div>
     )
