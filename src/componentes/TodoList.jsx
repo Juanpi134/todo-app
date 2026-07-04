@@ -86,7 +86,15 @@ function ToDoList() {
 
   //se crea la funcion moveTaskDown
   //recibe un indice de la lista para moverla hacia abajo
-  const moveTaskDown = (indice) => {};
+  const moveTaskDown = (indice) => {
+     if(indice < tasks.length - 1){
+        const updateTasks = [...tasks];
+        //en el segundo elemento me devuelve los elementos
+        [updateTasks[indice], updateTasks[indice + 1]] = [updateTasks[indice  +1], updateTasks[indice]];
+        setTasks(updateTasks);
+        console.log(updateTasks)
+    }
+  };
 
   return (
     <div className="to-do-list">
