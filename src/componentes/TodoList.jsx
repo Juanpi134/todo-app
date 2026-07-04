@@ -40,9 +40,11 @@ function ToDoList() {
     //entonces ["hola","chau",newTask];
     //el spread operator abre el array y coloca cada uno de sus elementos uno por uno dentro del array nuevo
     //no se puede usar .push porque en react no se debe modificar el estado directamente , siempre hay que crear uno nuevo
+    if(newTask.trim() != ""){
     setTasks(t => [...t,newTask])
     // limpiamos el input
     setNewTask("");
+    }
   };
 
   //se crea la funcion eliminar tarea que recibe un índice para buscar y eliminar
