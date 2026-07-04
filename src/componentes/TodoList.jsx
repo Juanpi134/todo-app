@@ -32,7 +32,18 @@ function ToDoList() {
     }
   };
   //esta funcion lo que hace es agregar una tarea al array de tareas
-  const addTask = () => {};
+  const addTask = () => {
+    //Esto lo que hace es añadir una nueva tarea
+    //si yo añado cualquier texto se añade cuando doy click 
+    // esto ...t lo que hace es desempaqueatar todos los elementos dentro de otro array nuevo
+    //t es ["hola","chau"]
+    //entonces ["hola","chau",newTask];
+    //el spread operator abre el array y coloca cada uno de sus elementos uno por uno dentro del array nuevo
+    //no se puede usar .push porque en react no se debe modificar el estado directamente , siempre hay que crear uno nuevo
+    setTasks(t => [...t,newTask])
+    // limpiamos el input
+    setNewTask("");
+  };
 
   //se crea la funcion eliminar tarea que recibe un índice para buscar y eliminar
   const deleteTask = (indice) => {
