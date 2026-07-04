@@ -48,3 +48,13 @@ button{
 .moverBoton{
   background-color: rgb(48, 48, 237);
 }
+
+
+/* seleccionamos los elementos de tipo texto con la pseudoclase text */
+input[type="text"]{
+  font-size: 1.6rem;
+  padding:10px;
+  border:2px solid rgba(0, 0, 0, 0.189);
+  border-radius: 5px;
+  color:rgba(128, 128, 128, 0.242);
+}
