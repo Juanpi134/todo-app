@@ -91,6 +91,18 @@ function ToDoList() {
                 Delete
             </button>
             */}
+
+            <button className="EliminarBoton" onClick={() => deleteTask(index)}>
+                Delete
+            </button>
+
+            <button className="moverBoton" onClick={() => moveTaskUp(index)}>
+                Up
+            </button>
+
+            <button className="moverBoton" onClick={() => moveTaskDown(index)}>
+                Down
+            </button>
           </li>
         ))}
       </ol>
