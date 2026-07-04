@@ -22,7 +22,17 @@ function ToDoList(){
         //el evento target me devuelve el elemento HTML
         //console.log(evento.target);
     }
+    //esta funcion lo que hace es agregar una tarea al array de tareas
+    const addTask = () => {
 
+    }
+
+    //se crea la funcion eliminar tarea que recibe un índice para buscar y eliminar
+    const deleteTask = (indice) => {
+
+    }
+
+    
     return (
         <div>
             <input type="text" name="" id="" onChange={manejadorDeCambiosEnElInput}/>
