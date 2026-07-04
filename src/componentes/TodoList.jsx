@@ -1,6 +1,10 @@
 //se importa el hook useState
 import { useState } from "react";
 
+
+//se importa el archivo index.css
+import  '../index.css'
+
 //creacion del componente todoList
 function ToDoList() {
   //se crean los estados de las tareas
@@ -92,15 +96,15 @@ function ToDoList() {
             </button>
             */}
 
-            <button className="EliminarBoton" onClick={() => deleteTask(index)}>
+            <button className="EliminarBoton" onClick={() => deleteTask(indice)}>
                 Delete
             </button>
 
-            <button className="moverBoton" onClick={() => moveTaskUp(index)}>
+            <button className="moverBoton" onClick={() => moveTaskUp(indice)}>
                 Up
             </button>
 
-            <button className="moverBoton" onClick={() => moveTaskDown(index)}>
+            <button className="moverBoton" onClick={() => moveTaskDown(indice)}>
                 Down
             </button>
           </li>
