@@ -33,7 +33,14 @@ function ToDoList(){
     }
 
     //se crea la funcion moveTaskUp 
+    //recibe un indice para mover el indice de la lista adelante
     const moveTaskUp = () => {
+
+    }
+
+    //se crea la funcion moveTaskDown
+    //recibe un indice de la lista para moverla hacia abajo
+     const moveTaskDown = () => {
 
     }
     
