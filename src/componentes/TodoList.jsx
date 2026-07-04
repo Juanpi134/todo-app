@@ -51,6 +51,22 @@ function ToDoList() {
   const deleteTask = (indice) => {
     // cuando imprimo el indice me devuelve lo que le paso por parametro
     //console.log(indice)
+    const updateTasks = tasks.filter((_,i) => {
+        // te devuelve cada elemento y su indice ejemplo
+        //hola 0
+        //chau 1
+        //si los indices no coindicen 
+        //es decir si los indices coinciden los filtraos , no lo queremos
+        //sino se añade el return limpia todo
+        //la funcion devuelve siempre undefined porque es un valor falsy
+        //si se utiliza llaves siempre return, sin llave no hace falta el return
+        return i !== indice
+    })
+
+    //cuando doy click me da un array vació de ese elemento y lo mismo con el otro
+    console.log(updateTasks);
+
+    setTasks(updateTasks);
   };
 
   //se crea la funcion moveTaskUp
