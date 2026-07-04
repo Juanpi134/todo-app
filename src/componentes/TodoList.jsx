@@ -58,6 +58,14 @@ function ToDoList(){
             <input type="text" placeholder="Escribe una tarea" value={newTask} name="" id="" onChange={manejadorDeCambiosEnElInput}/>
             <button className="botonAgregar" onClick={addTask}>Agregar</button>
             </div>
+
+            <ol>
+                {/* prueba de ver como se renderiza en consola los elementos del array actual */}
+                {/* cada tarea recibe un elemento a renderizar */}
+                {tasks.map((elemento) => {
+                    console.log(elemento)
+                })}
+            </ol>
         </div>
     )
 }
