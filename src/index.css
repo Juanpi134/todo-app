@@ -77,6 +77,19 @@ li{
   align-items: center;
 }
 
+/* 
+flex-grow:1 
+flex-shrink:2
+flex-basis:0%
+toma el espacio que debería ocupar tanto el espacio posible
+*/
 .text{
   flex:1;
+}
+
+
+.EliminarBoton, .moverBoton{
+  padding:8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
 }
