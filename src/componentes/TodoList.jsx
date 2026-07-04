@@ -32,6 +32,10 @@ function ToDoList(){
 
     }
 
+    //se crea la funcion moveTaskUp 
+    const moveTaskUp = () => {
+
+    }
     
     return (
         <div>
