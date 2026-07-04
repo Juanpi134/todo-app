@@ -19,7 +19,8 @@ function ToDoList(){
     //se crea la función manejador de inputs 
     //cada vez que hago un cambio como escribir me devuelve el objeto SyntheticBaseEvent
     const manejadorDeCambiosEnElInput = (evento) => {
-        console.log(evento);
+        //el evento target me devuelve el elemento HTML
+        //console.log(evento.target);
     }
 
     return (
