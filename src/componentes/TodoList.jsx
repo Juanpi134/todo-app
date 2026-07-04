@@ -31,7 +31,10 @@ function ToDoList() {
   const addTask = () => {};
 
   //se crea la funcion eliminar tarea que recibe un índice para buscar y eliminar
-  const deleteTask = (indice) => {};
+  const deleteTask = (indice) => {
+    // cuando imprimo el indice me devuelve lo que le paso por parametro
+    //console.log(indice)
+  };
 
   //se crea la funcion moveTaskUp
   //recibe un indice para mover el indice de la lista adelante
@@ -82,9 +85,12 @@ function ToDoList() {
           <li key={indice}>
             <span className="text">{tarea}</span>
             {/* por cada tarea creamos un boton  */}
-            <button>
+
+            {/* 
+            <button className="EliminarBoton" onClick={() => deleteTask(1)}>
                 Delete
             </button>
+            */}
           </li>
         ))}
       </ol>
