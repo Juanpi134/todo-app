@@ -15,6 +15,18 @@ function ToDoList(){
 
     //se muestra por pantalla y me muestra un array vacío
     console.log(newTask)
+
+    //se crea la función manejador de inputs 
+    //cada vez que hago un cambio como escribir me devuelve el objeto SyntheticBaseEvent
+    const manejadorDeCambiosEnElInput = (evento) => {
+        console.log(evento);
+    }
+
+    return (
+        <div>
+            <input type="text" name="" id="" onChange={manejadorDeCambiosEnElInput}/>
+        </div>
+    )
 }
 
 //se exporta el componente
