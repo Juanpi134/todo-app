@@ -4,7 +4,7 @@ import { useState } from "react";
 //creacion del componente todoList
 function ToDoList(){
     //se crean los estados de las tareas
-    const [tasks,setTasks] = useState([]);
+    const [tasks,setTasks] = useState(["hola","chau"]);
 
     //el valor inicial es un arreglo vacío
     //console.log(tasks);
@@ -56,6 +56,7 @@ function ToDoList(){
 
             <div>
             <input type="text" placeholder="Escribe una tarea" value={newTask} name="" id="" onChange={manejadorDeCambiosEnElInput}/>
+            <button className="botonAgregar" onClick={addTask}>Agregar</button>
             </div>
         </div>
     )
