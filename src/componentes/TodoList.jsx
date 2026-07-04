@@ -71,7 +71,18 @@ function ToDoList() {
 
   //se crea la funcion moveTaskUp
   //recibe un indice para mover el indice de la lista adelante
-  const moveTaskUp = (indice) => {};
+  const moveTaskUp = (indice) => {
+    //si el indice es mayor a cero es decir el elemento está por encima del primero no lo necesitamos mover más adelante
+    //necesitamos crear un nuevo array y utilizamos el operador spread y le desempaquetamos el array
+    //necesitamos cambiar los elementos dentro de un array
+    if(indice > 0){
+        const updateTasks = [...tasks];
+        //en el segundo elemento me devuelve los elementos
+        [updateTasks[indice], updateTasks[indice - 1]] = [updateTasks[indice -1], updateTasks[indice]];
+        setTasks(updateTasks);
+        console.log(updateTasks)
+    }
+  };
 
   //se crea la funcion moveTaskDown
   //recibe un indice de la lista para moverla hacia abajo
